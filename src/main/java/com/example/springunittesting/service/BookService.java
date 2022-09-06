@@ -34,7 +34,6 @@ private BookRepository bookRepository;
             int newPrice = price - (appliedDiscount * price / 100);
             book.setPrice(newPrice);
         }
-
         return newBooks;
     }
 
@@ -45,5 +44,6 @@ private BookRepository bookRepository;
         else{
             throw new NotFoundException("data is not available in database");
         }
+
     }
 }
